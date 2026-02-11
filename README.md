@@ -35,9 +35,10 @@ pip install numpy openai-whisper torch SpeechRecognition rich langchain langchai
 
 #make sure you have your bot running
 #in the code, in main.py, update line llm = OllamaLLM(model="trump"), currently line 17 to llm = OllamaLLM(model="yourmodel")
+#you do not need to change the prompt, this does nothing
 
 #finally, run main.py
 
-python main.py or python3 main.py 
+python main.py or python3 main.py(i think in Mac?)
 
 #should take a while to run the first time 
