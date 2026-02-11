@@ -34,11 +34,13 @@ deactivate
 pip install numpy openai-whisper torch SpeechRecognition rich langchain langchain-core langchain-community langchain-ollama pyttsx3 pyaudio
 
 #make sure you have your bot running
-#in the code, in main.py, update line llm = OllamaLLM(model="trump"), currently line 17 to llm = OllamaLLM(model="yourmodel")
+#in the code, in main.py, update line llm = OllamaLLM(model="bot"), currently line 17 to llm = OllamaLLM(model="yourmodel")
 #you do not need to change the prompt, this does nothing
 
 #finally, run main.py
 
 python main.py or python3 main.py(i think in Mac?)
 
-#should take a while to run the first time 
+#should take a while to run the first time
+<img width="1003" height="410" alt="image" src="https://github.com/user-attachments/assets/3bb44949-3e02-4efb-9bba-f8345905a234" />
+
