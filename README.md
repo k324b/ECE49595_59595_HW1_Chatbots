@@ -9,22 +9,27 @@ cd ECE495
 #if in VSCode, best to file, open folder, open ECE495
 
 #create virtual environment (might take a bit)
+
 python -m venv venv
 
 #activate
 
 #Windows cmd.exe
+
 venv\Scripts\activate.bat
 
 #Windows powershell
+
 venv\Scripts\Activate.ps1
 
 #MacOS
+
 source venv/bin/activate
 
 #Every time you are working with the code, you will need to run the activate command to be in the virtual environment or you will not have your libraries
 
 #Every time you are done with the code, run
+
 deactivate
 
 #This takes you out of the virtual environment
