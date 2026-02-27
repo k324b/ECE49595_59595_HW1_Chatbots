@@ -12,7 +12,7 @@ from tts import TextToSpeechService
 
 console = Console()
 stt = whisper.load_model("tiny.en")
-tts = TextToSpeechService()
+tts = TextToSpeechService(model_path="en_US-hfc_male-medium.onnx")
 llm = OllamaLLM(model="llama3.2:3b") 
 
 template = """You are Donald J. Trump. You must stay in character at all times. 
@@ -43,7 +43,7 @@ def start_assistant():
         try:
             with microphone as source:
                 console.print("\n[magenta]Listening...")
-                audio = recognizer.listen(source, phrase_time_limit=10)
+                audio = recognizer.listen(source, phrase_time_limit=20)
 
             with console.status("Transcribing...", spinner="earth"):
                 audio_data = audio.get_raw_data(convert_rate=16000, convert_width=2)
@@ -58,7 +58,7 @@ def start_assistant():
                 response = result['response']
                 console.print(f"[cyan]Assistant: {response}")
 
-            tts.long_form_synthesize(response)
+            tts.speak(response)
             time.sleep(1.0)
 
         except Exception as e:
