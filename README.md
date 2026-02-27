@@ -4,6 +4,8 @@ An in-depth paragraph about your project and overview of use.
 
 ## Ollama Setup
 
+![Alt text](images/ollama.png)
+
 ### Download Ollama
 
 https://ollama.com/download
@@ -60,7 +62,11 @@ source venv/bin/activate
 pip install numpy openai-whisper torch SpeechRecognition rich langchain langchain-core langchain-community langchain-ollama pyttsx3 pyaudio
 ```
 
-### Run Trump Bot Program
+## Run Chatbot Program
+
+![Alt text](images/trumpbiden.png)
+
+### Run Trump Bot
 
 Windows
 
@@ -74,7 +80,7 @@ MacOS
 python3 trump.py
 ```
 
-### Run Biden Bot Program
+### Run Biden Bot
 
 Windows
 
