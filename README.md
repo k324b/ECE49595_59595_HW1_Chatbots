@@ -59,7 +59,7 @@ source venv/bin/activate
 ### Install Dependencies
 
 ```
-pip install numpy openai-whisper torch SpeechRecognition rich langchain langchain-core langchain-community langchain-ollama pyttsx3 pyaudio piper-tts
+pip install numpy openai-whisper torch SpeechRecognition rich langchain langchain-core langchain-community langchain-ollama pyttsx3 pyaudio piper-tts sounddevice
 ```
 
 ## Run Chatbot Program
