@@ -27,7 +27,7 @@ git clone https://github.com/k324b/ECE49595_59595_HW1_Chatbots.git
 ```
 
 ```
-cd ece495
+cd ECE49595_59595_HW1_Chatbots
 ```
 
 ### Create Virtual Environment
