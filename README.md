@@ -4,7 +4,7 @@ An in-depth paragraph about your project and overview of use.
 
 ## Ollama Setup
 
-![Alt text](images/ollama.png)
+<img src="images/ollama.png" alt="ollama" width="200"/>
 
 ### Download Ollama
 
