@@ -23,7 +23,7 @@ Make sure this chatbot is always running when you are trying to run the trump an
 ### Clone this Repository
 
 ```
-git clone https://github.com/k324b/ECE495.git
+git clone https://github.com/k324b/ECE49595_59595_HW1_Chatbots.git
 ```
 
 ```
