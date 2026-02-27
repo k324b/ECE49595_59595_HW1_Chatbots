@@ -12,9 +12,8 @@ from tts import TextToSpeechService
 
 console = Console()
 stt = whisper.load_model("tiny.en") # better for computer with lower RAM
-tts = TextToSpeechService()
+tts = TextToSpeechService(model_path="en_US-hfc_male-medium.onnx")
 llm = OllamaLLM(model="llama3.2:3b")
-
 
 # prompt for bot to act like Biden
 template = """You are former president Joseph R. Biden. You must stay in character at all times. 
@@ -50,7 +49,7 @@ def start_assistant():
     result = chain.invoke({"input": initial_input})
     response = result['response']
     console.print(f"[cyan]Assistant: {response}")
-    tts.long_form_synthesize(response)
+    tts.speak(response)
     time.sleep(1.0)  
 
     # begins back and forth conversations
@@ -75,7 +74,7 @@ def start_assistant():
                 console.print(f"[cyan]Assistant: {response}")
 
             # speaks response out loud
-            tts.long_form_synthesize(response)
+            tts.speak(response)
             
             time.sleep(1.0)
 
